@@ -34,8 +34,8 @@ device = "auto"
 if task=='summary':
     ft_model = "danascott329/mixtral-document-summaries-telework"
 if task=='compare':
-    #ft_model = "danascott329/mixtral-telework-compare"
-    ft_model = 'telework-compare-mixtral'
+    ft_model = "danascott329/mixtral-telework-compare"
+    #ft_model = 'telework-compare-mixtral'
 
 # fine-tuned linewise model
 base_model = "mistralai/Mixtral-8x7B-Instruct-v0.1" 
