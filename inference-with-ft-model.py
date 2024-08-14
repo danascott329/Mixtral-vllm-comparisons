@@ -1,4 +1,5 @@
 print("START WITH CUDA DEVICE COUNT")
+import torch
 print(torch.cuda.is_available())
 print(torch.cuda.device_count())
 
@@ -16,7 +17,6 @@ from transformers import (
 import pandas as pd
 from datetime import datetime
 import os
-import torch
 from peft import LoraConfig, get_peft_model, PeftModel
 import huggingface_hub
 from vllm import LLM, SamplingParams
