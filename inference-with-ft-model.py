@@ -11,6 +11,10 @@ import torch
 from peft import LoraConfig, get_peft_model, PeftModel
 import huggingface_hub
 from vllm import LLM, SamplingParams
+import torch.multiprocessing as mp
+
+if __name__ == "__main__":
+    mp.set_start_method('spawn', force=True)
 
 hf_token = "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"
 write_token = "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"
