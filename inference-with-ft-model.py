@@ -54,7 +54,7 @@ tokenizer = AutoTokenizer.from_pretrained(base_model)
 # Prompt should be in this style due to how the data was created
 #prompt = "#### Human: What is the capital of Australia?#### Assistant:"
 
-model = LLM(model=ft_model, tokenizer = base_model, tensor_parallel_size=4)
+model = LLM(model=ft_model, tokenizer = tokenizer, tensor_parallel_size=4)
 
 # -----------------------------------------------------------------------------
 
