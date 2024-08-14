@@ -1,12 +1,12 @@
-print("START WITH CUDA DEVICE COUNT")
-import torch
-print(torch.cuda.is_available())
-print(torch.cuda.device_count())
 
 import torch.multiprocessing as mp
 
 mp.set_start_method('spawn', force=True)
 
+print("START WITH CUDA DEVICE COUNT")
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
 
 from transformers import (
     AutoModelForCausalLM,
