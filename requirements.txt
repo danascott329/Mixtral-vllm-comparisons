@@ -10,5 +10,5 @@ lfs
 vllm
 huggingface_hub
 filelock==3.13.4
-torch==2.0.1
+torch==2.1.2
 safetensors>=0.3.1
