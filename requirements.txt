@@ -7,7 +7,6 @@ protobuf
 gradio
 accelerate==0.21.0
 lfs
-vllm
 huggingface_hub
 filelock==3.13.4
 torch==2.1.2
